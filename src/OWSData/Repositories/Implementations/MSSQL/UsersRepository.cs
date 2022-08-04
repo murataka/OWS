@@ -2,9 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
-using Npgsql;
-using System.Linq;
+
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using OWSData.Models;
@@ -29,7 +27,7 @@ namespace OWSData.Repositories.Implementations.MSSQL
         {
             get
             {
-                return new SqlConnection(_storageOptions.Value.OWSDBConnectionString);
+                return new Microsoft.Data.SqlClient.SqlConnection(_storageOptions.Value.OWSDBConnectionString);
             }
         }
 

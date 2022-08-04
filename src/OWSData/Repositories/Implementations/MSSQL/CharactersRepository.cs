@@ -2,8 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
+
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using OWSData.Models.StoredProcs;
@@ -11,6 +10,7 @@ using OWSData.Repositories.Interfaces;
 using OWSData.Models;
 using OWSData.Models.Tables;
 using OWSData.SQL;
+using Microsoft.Data.SqlClient;
 
 namespace OWSData.Repositories.Implementations.MSSQL
 {
