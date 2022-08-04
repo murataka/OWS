@@ -1,4 +1,4 @@
-FROM postgres:14.2-alpine3.15
+FROM ubuntu/postgres:latest
 
 RUN mkdir -p /docker-entrypoint-initdb.d
 
